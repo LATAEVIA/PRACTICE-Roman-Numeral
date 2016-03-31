@@ -26,8 +26,12 @@ $(document).ready(function(){
     // three-digit solver:
     // $("#output").text(numeralCodes[2][userInput[0]] + numeralCodes[1][userInput[1]] + numeralCodes[0][userInput[2]]);
 
-    if (userInput > 3999) {
+    if (userInput === "") {
+      $("#output").text("I can't do anything with nothing.")
+    } else if (userInput > 3999) {
       $("#output").text("Roman numerals don't go that high!")
+    } else if (userInput < 0) {
+      $("#output").text("No negative numbers, please.")
     } else if (userInput.length === 1) {
       $("#output").text(numeralCodes[0][userInput]);
     } else if (userInput.length === 2) {
