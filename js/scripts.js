@@ -27,7 +27,7 @@ $(document).ready(function(){
     // $("#output").text(numeralCodes[2][userInput[0]] + numeralCodes[1][userInput[1]] + numeralCodes[0][userInput[2]]);
 
     if (userInput === "") {
-      $("#output").text("I can't do anything with nothing.")
+      $("#output").text("I can't do something with nothing.")
     } else if (userInput > 3999) {
       $("#output").text("Roman numerals don't go that high!")
     } else if (userInput < 0) {
@@ -45,28 +45,3 @@ $(document).ready(function(){
 
   });
 });
-
-
-
-
-  // $("#form").submit(function(event){
-  //   event.preventDefault();
-  //   var n = parseInt($("#text-input").val());
-  //   convert(n) = $("#text-output").val();
-  // });
-  //
-  // var numeralCodes = [["","I","II","III","IV","V","VI","VII","VIII","IX"],         //         Ones
-  //                     ["","X","XX","XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"],   // Tens
-  //                     ["","C","CC","CCC","CD","D","DC","DCC","DCCC","CM"]];        // Hundreds
-  //
-  // function convert(num) {
-  //   var numeral = "";
-  //   var digits = num.toString().split('').reverse();
-  //   for (var i=0; i < digits.length; i++){
-  //     numeral = numeralCodes[i][parseInt(digits[i])] + numeral;
-  //   }
-  //   return numeral;
-  // }
-
-  /* *** How the hell does this work? *** */
-  // It's actually pretty genius
